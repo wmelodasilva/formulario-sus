@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="FORMULÁRIO.CSS" media="screen">
+    <link rel="shortcut icon" href="favicon_io/sus.png" type="image">
+    <title>Cadastro sus</title>
+<img src="logo/governo.png.png" alt="logo">
+</head>
+<body>  
+    <div class="campo">
+        <h1 id="Titulo">Sistema unico de saúde(SUS)</h1>
+        <p id="paragrafo"><strong>Faça seu cadastro</strong></p>
+        <br>
+    </div>
+    
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+
+            <div class="campo">
+                <label for="cep">CEP</label>
+                <input type="cep" name="cep" id="cep" required>
+            </div>
+
+           <div class="campo">
+             <label for="email">Email</label>
+             <input type="email" name="email" id="email" required>
+           </div>
+        </fieldset>
+
+    <fieldset class="grupo">
+        <div class="campo">
+            <label for="genero"><strong>GENERO</strong></label> 
+            <select id="genero">
+            <option selected disabled value="">Select</option>
+            <option>Masculino</option>
+            <option>Feminino</option>
+            <option>Não Binario</option>
+            <option>Outros</option>
+        </select>
+        </div>
+
+    </fieldset>
+
+    <fieldset class="grupo">
+        <div class="campo">
+            <label for="GRUPO"><strong>GRUPO</strong></label>
+            <select id="Idade"> 
+                <option selected disabled value="">select</option>
+                <option>00 à 14 Infatil</option>
+                <option>15 à 17 Juvenil</option>
+                <option>18 à 45 Adulto</option>
+                <option>50 à 65+ Terceira idade</option>
+            </select>
+        </div>
+    </fieldset>
+
+    <fieldset class="grupo">
+        <div id="checkbox">
+            <label> <strong> Selecione seu atendimento:</strong></label><br>
+            <label for="marcação">MARCAÇÃO DE CONSULTA</label><br>
+            <input type="checkbox" id="marcação" name="marcação" value="MARCAÇÃODESCONSULTA"><br>
+            <label for="consulta">CONSULTA</label><br>
+            <input type="checkbox" id="consulta" name="consulta" value="CONSULTA"><br>
+            <label for="remarcação">REMARCAÇÃO</label><br>
+            <input type="checkbox" id="remarcação" name="remarcação" value="REMARCAÇÃO"><br>
+            <label for="cirurgias">CIRGURGIAS</label><br>
+            <input type="checkbox" id="cirurgias" name="cirurgias" value="CIRGURGIAS"><br>
+        </div>
+    </fieldset>
+
+    <div class="campo">
+        <br>
+        <label><strong>DIGITE O NOME DO LOCAL ONDE FOI REALIZADA A CONSULTA</strong></label>
+        <textarea name="localname" id="localname" cols="30" rows="3"></textarea>
+    </div>
+    <button class="button" type="submit">CONCLUIR</button>
+    </form>
+
+
+
+</body>
+</html>
